@@ -15,7 +15,7 @@ interface Props {
 
 export const ListProyects = ({ proyects, setActiveProyecto }: Props) => {
   return (
-    <div className="h-full">
+    <div className="h-full max-[1401px]:w-1/3">
       <h1 className='mb-4'>Mis Proyectos</h1>
       <ul className='list-disc pl-4'>
         {
