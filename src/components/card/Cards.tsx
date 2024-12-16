@@ -14,7 +14,7 @@ interface Props {
 
 export const Cards = ({ proyects }: Props) => {
   return (
-    <div className="flex flex-col items-center gap-12">
+    <div className="flex flex-col items-center gap-12 fade-in">
       {proyects.map((proyect) => (
         <CardItem key={proyect.name} {...proyect} />
       ))}

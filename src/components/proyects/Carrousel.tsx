@@ -28,7 +28,7 @@ export const Carrousel = ({ proyects }: Props) => {
     <Swiper
       navigation={true}
       modules={[Navigation]}
-      className="mySwiper rounded-lg shadow-lg"
+      className="mySwiper rounded-lg shadow-lg fade-in"
     >
       {proyects.map((proyect) => (
         <SwiperSlide key={proyect.name}>
@@ -43,7 +43,7 @@ export const Carrousel = ({ proyects }: Props) => {
                       w-full py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg 
                       text-white focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
                 >
-                  Conocer Mas...
+                  Ver Mas...
                 </button>
               </div>
             </div>
