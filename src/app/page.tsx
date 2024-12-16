@@ -20,7 +20,7 @@ const proyects = [
     name: "Proyecto 3",
     description: "Lorem ipsum dolor sit amet.",
     isActive: false,
-    image: image1,
+    image: image2,
   },
   {
     name: "Proyecto 4",
