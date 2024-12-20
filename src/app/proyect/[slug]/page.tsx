@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-export default function () {
+export default function ProyectPage() {
   if (true) {
     notFound();
   }
