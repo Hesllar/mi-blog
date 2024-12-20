@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface Props {
   name: string;
@@ -27,12 +28,12 @@ export const CardItem = ({ description, image, name }: Props) => {
         </div>
         {/* Agregar Boton */}
         <div className="flex p-6 justify-center">
-          <button
-            type="button"
-            className="w-full py-3 px-4 items-center gap-x-2 text-sm  text-white font-medium rounded-lg border border-transparent bg-blue-700"
+          <Link
+            href={`/proyect/${name}`}
+            className="w-full py-3 px-4 items-center text-center gap-x-2 text-sm  text-white font-medium rounded-lg border border-transparent bg-blue-700"
           >
             Ver Mas...
-          </button>
+          </Link>
         </div>
       </div>
     </div>

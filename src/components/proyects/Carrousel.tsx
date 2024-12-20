@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import "./swiper.css";
+import Link from "next/link";
 
 interface Proyect {
   name: string;
@@ -37,14 +38,14 @@ export const Carrousel = ({ proyects }: Props) => {
             <div className="flex flex-col px-5 justify-around h-full">
               <h2 className="text-black">{proyect.name}</h2>
               <div>
-                <button
-                  type="button"
+                <Link
+                  href={`/proyect/${proyect.name}`}
                   className="justify-center bg-blue-700
                       w-full py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg 
                       text-white focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
                 >
                   Ver Mas...
-                </button>
+                </Link>
               </div>
             </div>
           </div>

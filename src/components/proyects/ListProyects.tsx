@@ -25,7 +25,7 @@ export const ListProyects = ({
 
   return (
     <div className="h-full max-[1401px]:w-1/3">
-      <h1 className="mb-4 text-lg">Mis Proyectos</h1>
+      <h1 className="mb-4 text-lg font-bold">Mis Proyectos</h1>
       <ul className="list-disc pl-4">
         {proyects.map((proyect) => (
           <ItemProyect

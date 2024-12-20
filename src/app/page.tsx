@@ -1,6 +1,5 @@
 import { About } from "@/components/about/About";
-import image1 from "../../public/img/WhatsApp Image 2021-07-10 at 2.54.23 PM.jpg";
-import image2 from "../../public/img/image-not-found-scaled-1150x647.png";
+import { imageNotFound } from "../../public/index";
 import { MyProyects } from "@/components/proyects/MyProyects";
 
 const proyects = [
@@ -8,25 +7,25 @@ const proyects = [
     name: "Proyecto 1",
     description: "Lorem ipsum dolor sit amet.",
     isActive: true,
-    image: image2,
+    image: imageNotFound,
   },
   {
     name: "Proyecto 2",
     description: "Lorem ipsum dolor sit amet.",
     isActive: false,
-    image: image2,
+    image: imageNotFound,
   },
   {
     name: "Proyecto 3",
     description: "Lorem ipsum dolor sit amet.",
     isActive: false,
-    image: image2,
+    image: imageNotFound,
   },
   {
     name: "Proyecto 4",
     description: "Lorem ipsum dolor sit amet.",
     isActive: false,
-    image: image2,
+    image: imageNotFound,
   },
 ];
 

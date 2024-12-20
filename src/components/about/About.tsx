@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "../../../public/img/WhatsApp Image 2021-07-10 at 2.54.23 PM.jpg";
+import { image } from "../../../public/index";
 
 export const About = () => {
   return (
