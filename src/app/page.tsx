@@ -31,7 +31,7 @@ const proyects = [
 
 export default function Home() {
   return (
-    <main className="h-screen flex flex-row max-[1401px]:flex-col-reverse max-[1401px]:h-full items-center my-14 justify-center mx-24">
+    <main className="h-screen flex flex-row max-[1401px]:flex-col-reverse max-[1401px]:h-full max-[1401px]:my-32 items-center my-14 justify-center mx-24">
       <MyProyects proyects={proyects} />
       <About />
     </main>

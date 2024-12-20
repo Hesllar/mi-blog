@@ -18,9 +18,16 @@
   object-fit: cover;
 }
 
+@media (max-width: 600px) {
+  .swiper {
+    max-height: 400px;
+  }
+}
+
 @media (max-width: 500px) {
   .swiper {
     width: auto;
-    height: auto;
+
+    max-height: 300px;
   }
 }
