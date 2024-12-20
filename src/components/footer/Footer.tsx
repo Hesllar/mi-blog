@@ -6,7 +6,7 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="relative bg-gray-500 pt-8 pb-6 bor -mx-24 px-24 sm:px-10">
+    <footer className="relative bg-gray-500 pt-8 pb-6 px-24 sm:px-10 bottom-0">
       <div className=" mx-auto">
         <div className=" w-full px-4 text-center">
           <h3 className="text-3xl fonat-semibold text-blueGray-700">

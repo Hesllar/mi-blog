@@ -3,8 +3,8 @@ import { image } from "../../../public/index";
 
 export const About = () => {
   return (
-    <div className="flex flex-col h-full max-[1401px]:flex-row max-[1401px]:w-full max-[600px]:flex-col">
-      <div className=" max-[600px]:flex max-[600px]:justify-center">
+    <div className="flex flex-col h-full max-[1401px]:flex-row max-[1401px]:w-full max-[600px]:flex-col justify-center">
+      <div className="max-[600px]:flex max-[600px]:justify-center">
         <Image
           src={image}
           alt=""
