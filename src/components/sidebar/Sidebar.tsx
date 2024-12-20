@@ -13,7 +13,7 @@ export const Sidebar = ({ isSideMenuOpen }: Props) => {
         className={clsx(
           "fixed p-5 left-0 top-0 w-[200px] h-screen bg-gray-500 z-20 shadow-2xl transform transition-all duration-300",
           {
-            "translate-x-full": !isSideMenuOpen,
+            "translate-y-full": !isSideMenuOpen,
           }
         )}
       >
