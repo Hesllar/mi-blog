@@ -22,8 +22,8 @@ export const ItemProyect = ({
       onClick={handleClick}
       key={name}
       className={clsx("mb-2 cursor-pointer font-semibold", {
-        "text-white": !proyectCurrent,
-        "text-black": proyectCurrent && proyectCurrent === name,
+        "text-black": proyectCurrent,
+        "text-white": proyectCurrent && proyectCurrent === name,
       })}
     >
       {name}

@@ -4,25 +4,25 @@ import { MyProyects } from "@/components/proyects/MyProyects";
 
 const proyects = [
   {
-    name: "Proyecto 1",
+    name: "Proyecto_1",
     description: "Lorem ipsum dolor sit amet.",
     isActive: true,
     image: imageNotFound,
   },
   {
-    name: "Proyecto 2",
+    name: "Proyecto_2",
     description: "Lorem ipsum dolor sit amet.",
     isActive: false,
     image: imageNotFound,
   },
   {
-    name: "Proyecto 3",
+    name: "Proyecto_3",
     description: "Lorem ipsum dolor sit amet.",
     isActive: false,
     image: imageNotFound,
   },
   {
-    name: "Proyecto 4",
+    name: "Proyecto_4",
     description: "Lorem ipsum dolor sit amet.",
     isActive: false,
     image: imageNotFound,
@@ -31,9 +31,9 @@ const proyects = [
 
 export default function Home() {
   return (
-    <main className="h-screen flex flex-row max-[1401px]:flex-col-reverse max-[1401px]:h-full max-[1401px]:my-32 items-center my-14 justify-center mx-24">
-      <MyProyects proyects={proyects} />
+    <main className=" flex flex-col items-center my-32 justify-center mx-8 sm:mx-14 md:mx-24 gap-24">
       <About />
+      <MyProyects proyects={proyects} />
     </main>
   );
 }

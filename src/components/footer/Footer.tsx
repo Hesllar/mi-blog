@@ -21,7 +21,7 @@ export const Footer = () => {
               <IoLogoLinkedin size={40} />
             </a>
             <a
-              href="https://wa.me/948166780"
+              href="#"
               target="_blank"
               className="shadow-lg items-center justify-center align-center outline-none cursor-pointer transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
             >

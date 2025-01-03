@@ -9,7 +9,7 @@ interface Props {
 
 export const CardItem = ({ description, image, name }: Props) => {
   return (
-    <div className="max-w-[720px] mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+    <div className="max-w-[720px] mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-100 duration-300">
       <div className="relative flex max-w-[24rem] flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
           <Image
