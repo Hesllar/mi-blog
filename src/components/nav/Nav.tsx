@@ -28,7 +28,7 @@ export const Nav = () => {
         />
       )}
 
-      <nav className=" h-[40px] border-gray-200 text-text dark:text-dark-text bg-secondary/90 dark:bg-dark-secondary/90 top-0 w-full mx-auto drop-shadow-lg z-50 fixed px-10 bg-gray-500 content-center">
+      <nav className=" h-14 border-gray-200 text-text dark:text-dark-text bg-secondary/90 dark:bg-dark-secondary/90 top-0 w-full mx-auto drop-shadow-lg z-50 fixed px-10 bg-gray-500 content-center">
         <div className="flex flex-wrap  justify-between items-center w-full">
           <Link href="/" className="flex items-center">
             {/* <Image src='/Logo.png' height={500} width={500} className="mr-3 size-11 " alt="Icon" /> */}

@@ -15,7 +15,9 @@ export const About = () => {
       </div>
       <div
         className="
+        shadow-2xl
         bg-gradient-to-r from-purple-500 to-pink-500
+        hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500
         p-10
         rounded-lg
         w-full 
@@ -24,8 +26,8 @@ export const About = () => {
        max-[600px]:mt-10 max-[600px]:p-8
         "
       >
-        <p className="text-2xl font-bold mb-4">¡Hola!</p>
-        <span className="font-medium">
+        <p className="text-3xl font-bold mb-4">¡Hola!</p>
+        <span className="font-medium text-lg">
           Soy Hesllar Linzmayer, y bienvenidos a mi blog. Aquí podrás conocer
           mis proyectos, los cuales he desarrollado con dedicación y pasión.
         </span>
