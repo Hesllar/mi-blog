@@ -1,12 +1,9 @@
-import { notFound } from "next/navigation";
+import { Contact } from "@/components/contact/Contact";
 
 export default function ContactPage() {
-  if (true) {
-    notFound();
-  }
   return (
-    <div>
-      <h1>Hello Page</h1>
+    <div className="h-screen flex justify-center">
+      <Contact />
     </div>
   );
 }
