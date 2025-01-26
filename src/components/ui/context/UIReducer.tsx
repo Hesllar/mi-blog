@@ -1,8 +1,9 @@
-type TodoAction = { type: "onToggleMenu" };
+type TodoAction = { type: "onToggleMenu" | "onToggleToast" };
 
 interface Props {
   isOpenMenu: boolean;
   sectionRef: React.RefObject<HTMLElement>;
+  isOpenToast: boolean;
 }
 
 export const UIReducer = (state: Props, action: TodoAction) => {
@@ -12,7 +13,11 @@ export const UIReducer = (state: Props, action: TodoAction) => {
         ...state,
         isOpenMenu: !state.isOpenMenu,
       };
-
+    case "onToggleToast":
+      return {
+        ...state,
+        isOpenToast: !state.isOpenToast,
+      };
     default:
       return state;
   }

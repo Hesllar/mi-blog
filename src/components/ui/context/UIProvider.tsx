@@ -9,6 +9,7 @@ interface Props {
 const init = {
   isOpenMenu: false,
   sectionRef: { current: null },
+  isOpenToast: false,
 };
 
 export const UIProvider = ({ children }: Props) => {
@@ -18,8 +19,12 @@ export const UIProvider = ({ children }: Props) => {
     dispatch({ type: "onToggleMenu" });
   };
 
+  const onToggleToast = () => {
+    dispatch({ type: "onToggleToast" });
+  };
+
   return (
-    <UIContext.Provider value={{ ...UIState, onToggleMenu }}>
+    <UIContext.Provider value={{ ...UIState, onToggleMenu, onToggleToast }}>
       {children}
     </UIContext.Provider>
   );

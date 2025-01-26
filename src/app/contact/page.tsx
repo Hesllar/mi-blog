@@ -1,9 +1,9 @@
-import { Contact } from "@/components/contact/Contact";
+import { ContactProvider } from "@/components/contact/Contact";
 
 export default function ContactPage() {
   return (
     <div className="h-screen flex justify-center">
-      <Contact />
+      <ContactProvider />
     </div>
   );
 }
