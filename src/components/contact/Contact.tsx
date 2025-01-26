@@ -92,6 +92,7 @@ const Contact = () => {
       resetForm();
       setErrorSubmited(false);
     } catch (error) {
+      console.log(error);
       setErrorSubmited(true);
     } finally {
       if (isOpenToast) return;
