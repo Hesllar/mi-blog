@@ -91,11 +91,9 @@ const Contact = () => {
       }
       resetForm();
       setErrorSubmited(false);
+      onToggleToast();
     } catch (error) {
-      console.log(error);
       setErrorSubmited(true);
-    } finally {
-      if (isOpenToast) return;
       onToggleToast();
     }
   };
@@ -111,7 +109,7 @@ const Contact = () => {
   }, [isOpenToast]);
 
   return (
-    <div className="flex flex-col justify-center items-center sm:w-auto md:w-[500px]">
+    <div className="flex flex-col justify-center items-center w-full p-12 md:p-0 md:w-[500px] gap-8">
       {isOpenToast && (
         <Toast
           message="Correo enviado correctamente"
@@ -122,16 +120,16 @@ const Contact = () => {
 
       <form
         onSubmit={handleOnSubmit}
-        className="flex justify-center items-center w-full h-[800px] fade-in-right"
+        className="flex justify-center items-center w-full"
       >
-        <div className="flex flex-col gap-8  w-full p-2 sm:p-8 sm:border sm:border-black sm:shadow-lg rounded-md">
+        <div className="flex flex-col gap-8 w-full p-8 border border-black sm:shadow-lg rounded-md">
           <div className="flex flex-col w-full justify-between gap-4">
             <label htmlFor="" className="text-black font-semibold">
               Correo Electronico:
             </label>
             <input
               type="email"
-              className={clsx("border rounded-md h-[40px]", {
+              className={clsx("border rounded-md h-[40px] p-2 text-black", {
                 "border-black": initialForm || !errorForm.errorEmail,
                 "border-red-500": !initialForm && errorForm.errorEmail,
               })}
@@ -152,7 +150,7 @@ const Contact = () => {
             </label>
             <textarea
               onChange={handleOnChange}
-              className={clsx("border rounded-md h-[400px]", {
+              className={clsx("border rounded-md h-[400px] p-2 text-black", {
                 "border-black": initialForm || !errorForm.errorMessage,
                 "border-red-500": !initialForm && errorForm.errorMessage,
               })}
