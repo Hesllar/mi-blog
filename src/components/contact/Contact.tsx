@@ -93,6 +93,7 @@ const Contact = () => {
       setErrorSubmited(false);
       onToggleToast();
     } catch (error) {
+      console.log(error);
       setErrorSubmited(true);
       onToggleToast();
     }
