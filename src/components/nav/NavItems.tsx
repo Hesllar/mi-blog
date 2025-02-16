@@ -15,9 +15,10 @@ const navItems = [
     name: "Incio",
     path: "/",
   },
-  // {
-  //   name: "Mis proyectos",
-  // },
+  {
+    name: "Sobre mi",
+    path: "/about",
+  },
   {
     name: "Contacto",
     path: "contact",
