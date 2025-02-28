@@ -19,10 +19,6 @@ const navItems = [
     name: "Sobre mi",
     path: "/about",
   },
-  {
-    name: "Contacto",
-    path: "contact",
-  },
 ];
 
 export const NavItems = ({ flexDirection }: Props) => {
