@@ -1,34 +1,52 @@
 import Image from "next/image";
-import { image } from "../../../public/index";
+import { image2, image3 } from "../../../public/index";
 
 export default function AboutPage() {
   return (
-    <div className="h-full lg:h-screen fade-in lg:content-center">
-      <div className="flex justify-center m-6 lg:my-0">
-        <div className="flex flex-col items-center lg:flex-row lg:w-1/2 w-full p-6 shadow-xl gap-4 lg:items-stretch ">
-          <Image
-            src={image}
-            alt=""
-            width={200}
-            height={200}
-            className="rounded-md object-fill text-center"
-          />
-          <p className="text-black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            praesentium, obcaecati doloribus enim animi excepturi soluta, et
-            labore doloremque molestias quasi optio libero eos voluptatum
-            repellendus culpa, iste deleniti quos. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Harum praesentium, obcaecati doloribus
-            enim animi excepturi soluta, et labore doloremque molestias quasi
-            optio libero eos voluptatum repellendus culpa, iste deleniti quos.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            praesentium, obcaecati doloribus enim animi excepturi soluta, et
-            labore doloremque molestias quasi optio libero eos voluptatum
-            repellendus culpa, iste deleniti quos. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Harum praesentium, obcaecati doloribus
-            enim animi excepturi soluta, et labore doloremque molestias quasi
-            optio libero eos voluptatum repellendus culpa, iste deleniti quos.
-          </p>
+    <div className="h-full xl:h-screen fade-in lg:content-center">
+      <div className="flex justify-center m-6 lg:my-6">
+        <div className="flex flex-col lg:w-1/2 w-full p-6 shadow-xl bg-white rounded-md gap-6">
+          <div className="flex flex-col lg:flex-row gap-4 items-center lg:items-stretch">
+            <Image
+              src={image2}
+              alt=""
+              width={200}
+              height={200}
+              className="rounded-md object-contain text-center"
+            />
+            <div className="flex flex-col gap-4">
+              <p className="text-black">
+                En este apartado te contaré un poco más sobre mí. Actualmente
+                tengo 28 años y vivo con mi pareja e hijo. Llevo alrededor de
+                cinco años ejerciendo como programador, un camino en el que he
+                aprendido y mejorado constantemente.
+              </p>
+              <p className="text-black">
+                No ha sido fácil, ya que requiere tiempo y dedicación, pero lo
+                gratificante de esta profesión es que cada logro alcanzado
+                representa una gran satisfacción. En mi tiempo libre —que es muy
+                poco, jejeje— intento seguir aprendiendo y manteniéndome
+                actualizado sobre las novedades en mi área, explorando nuevas
+                tecnologías, mejores prácticas y tendencias del sector.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col-reverse lg:flex-row gap-4 items-center lg:items-stretch">
+            <p className="text-black content-center">
+              En cuanto a mi formación, soy Analista Programador, graduado de
+              DuocUC, donde adquirí una sólida base en programación y lógica de
+              desarrollo. Más allá del conocimiento técnico, destaco mi
+              capacidad para el trabajo en equipo y la resolución de problemas,
+              habilidades que he perfeccionado con el tiempo.
+            </p>
+            <Image
+              src={image3}
+              alt=""
+              width={200}
+              height={200}
+              className="rounded-md object-contain text-center"
+            />
+          </div>
         </div>
       </div>
     </div>
