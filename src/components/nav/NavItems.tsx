@@ -15,10 +15,6 @@ const navItems = [
     name: "Incio",
     path: "/",
   },
-  {
-    name: "Sobre mi",
-    path: "/about",
-  },
 ];
 
 export const NavItems = ({ flexDirection }: Props) => {

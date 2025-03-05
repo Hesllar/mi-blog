@@ -1,20 +1,36 @@
+"use client";
+
 import Image from "next/image";
 import { image } from "../../../public/index";
+import { useState } from "react";
+import clsx from "clsx";
+import { MoreAbout } from "./MoreAbout";
 
 export const About = () => {
+  const [showMore, setShowMore] = useState(false);
+
+  const [isElementFocused, setIsElementFocused] = useState(false);
+
+  const handleOnMouseEnter = () => setIsElementFocused(true);
+
+  const handleOnMouseLeave = () => setIsElementFocused(false);
+
+  const handleOnClick = () => setShowMore(!showMore);
+
   return (
-    <div className="flex flex-col h-1/4 w-full gap-8 md:flex-row">
-      <div className="w-full flex justify-center md:w-auto">
-        <Image
-          src={image}
-          alt=""
-          width={200}
-          height={200}
-          className="rounded-full hover:skew-y-3"
-        />
-      </div>
-      <div
-        className="
+    <>
+      <div className="flex flex-col h-1/4 w-full gap-8 md:flex-row">
+        <div className="w-full flex justify-center md:w-auto">
+          <Image
+            src={image}
+            alt=""
+            width={200}
+            height={200}
+            className="rounded-full hover:skew-y-3"
+          />
+        </div>
+        <div
+          className="
         shadow-2xl
         bg-gradient-to-r from-purple-500 to-pink-500
         hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500
@@ -23,15 +39,35 @@ export const About = () => {
         w-full 
         max-[1401px]:content-center
         max-[1401px]:mt-0 max-[1401px]:shadow-2xl 
-       max-[600px]:mt-10 max-[600px]:p-8
-        "
-      >
-        <p className="text-3xl font-bold mb-4">¡Hola!</p>
-        <span className="font-medium text-lg">
-          Soy Hesllar Linzmayer, y bienvenidos a mi blog. Aquí podrás conocer
-          mis proyectos, los cuales he desarrollado con dedicación y pasión.
-        </span>
+       max-[600px]:mt-10 max-[600px]:p-8"
+          onMouseEnter={handleOnMouseEnter}
+          onMouseLeave={handleOnMouseLeave}
+        >
+          <div className="flex flex-col gap-2">
+            <p className="text-3xl font-bold">¡Hola!</p>
+            <span className="font-semibold text-lg">
+              Soy Hesllar Linzmayer, y bienvenidos a mi blog. Aquí podrás
+              conocer mis proyectos, los cuales he desarrollado con dedicación y
+              pasión.
+            </span>
+            <div className="flex justify-center mt-6">
+              <button
+                onClick={handleOnClick}
+                className="bg-white  w-full sm:w-1/2 xl:w-1/6 p-3 rounded-lg hover:shadow-2xl"
+              >
+                <span
+                  className={clsx("font-semibold text-lg text-purple-400", {
+                    "text-cyan-300": isElementFocused,
+                  })}
+                >
+                  Conocer más
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      {showMore && <MoreAbout />}
+    </>
   );
 };
