@@ -39,13 +39,15 @@ export const About = () => {
         w-full 
         max-[1401px]:content-center
         max-[1401px]:mt-0 max-[1401px]:shadow-2xl 
-       max-[600px]:mt-10 max-[600px]:p-8"
+        max-[600px]:mt-10 max-[600px]:p-8
+        dark:bg-gradient-ocean
+        dark:hover:bg-gradient-electric"
           onMouseEnter={handleOnMouseEnter}
           onMouseLeave={handleOnMouseLeave}
         >
           <div className="flex flex-col gap-2">
-            <p className="text-3xl font-bold">¡Hola!</p>
-            <span className="font-semibold text-lg">
+            <p className="text-3xl font-bold text-white">¡Hola!</p>
+            <span className="font-semibold text-lg text-white">
               Soy Hesllar Linzmayer, y bienvenidos a mi blog. Aquí podrás
               conocer mis proyectos, los cuales he desarrollado con dedicación y
               pasión.
@@ -53,12 +55,15 @@ export const About = () => {
             <div className="flex justify-center mt-6">
               <button
                 onClick={handleOnClick}
-                className="bg-white  w-full sm:w-1/2 xl:w-1/6 p-3 rounded-lg hover:shadow-2xl"
+                className="bg-white w-full sm:w-1/2 xl:w-1/6 p-3 rounded-lg hover:shadow-2xl dark:bg-[#FFFFFF]"
               >
                 <span
-                  className={clsx("font-semibold text-lg text-purple-400", {
-                    "text-cyan-300": isElementFocused,
-                  })}
+                  className={clsx(
+                    "font-semibold text-lg text-purple-400 dark:text-[#203A43]",
+                    {
+                      "text-cyan-300": isElementFocused,
+                    }
+                  )}
                 >
                   Conocer más
                 </span>

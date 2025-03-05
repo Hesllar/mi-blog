@@ -31,7 +31,7 @@ export const NavItems = ({ flexDirection }: Props) => {
       {navItems.map((item) => (
         <Link
           href={item.path}
-          className="py-2 sm:pr-4 sm:pl-3 hover:text-dark-primary dark:hover:text-primary cursor-pointer font-serif font-semibold sm:font-normal text-sm sm:text-xl"
+          className="text-white py-2 sm:pr-4 sm:pl-3 hover:text-dark-primary cursor-pointer font-serif font-semibold sm:font-normal text-sm sm:text-xl dark:hover:text-primary"
           key={item.name}
           onClick={handleOnClick}
         >

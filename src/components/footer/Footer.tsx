@@ -6,12 +6,10 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="relative bg-gray-500 pt-8 pb-6 px-0 md:px-10 bottom-0">
-      <div className="flex flex-col md:flex-row w-full px-0 md:px-4 i items-center md:justify-around gap-2 md:gap-0">
+    <footer className="relative bg-gray-500 pt-8 pb-6 px-0 md:px-10 bottom-0 dark:bg-gradient-space">
+      <div className="flex flex-col md:flex-row w-full px-0 md:px-4 i items-center md:justify-around gap-2 md:gap-0 text-white">
         <div className="flex flex-col ">
-          <h3 className="text-3xl fonat-semibold text-blueGray-700">
-            Contacto
-          </h3>
+          <h3 className="text-3xl fonat-semibold ">Contacto</h3>
           <span>Email Contacto:</span>
           <a
             href="mailto:hesllar.linzmayer@gmail.com"

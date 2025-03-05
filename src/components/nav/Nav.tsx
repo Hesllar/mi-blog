@@ -28,11 +28,11 @@ export const Nav = () => {
         />
       )}
 
-      <nav className=" h-14 border-gray-200 text-text dark:text-dark-text bg-secondary/90 dark:bg-dark-secondary/90 top-0 w-full mx-auto drop-shadow-lg z-50 fixed px-10 bg-gray-500 content-center">
-        <div className="flex flex-wrap  justify-between items-center w-full">
+      <nav className=" h-14 text-text top-0 w-full mx-auto drop-shadow-lg z-50 fixed px-10 bg-gray-500 content-center dark:bg-gradient-space">
+        <div className="flex flex-wrap justify-between items-center w-full">
           <Link href="/" className="flex items-center">
             {/* <Image src='/Logo.png' height={500} width={500} className="mr-3 size-11 " alt="Icon" /> */}
-            <h1 className="block self-center text-xl font-serif font-normal whitespace-nowrap">
+            <h1 className="block self-center text-xl font-serif font-normal whitespace-nowrap text-white">
               Hesllar Linzmayer
             </h1>
           </Link>
@@ -42,7 +42,7 @@ export const Nav = () => {
             <IoMenu
               size={30}
               onClick={() => onToggleMenu()}
-              className="cursor-pointer"
+              className="cursor-pointer text-white"
             />
           )}
         </div>

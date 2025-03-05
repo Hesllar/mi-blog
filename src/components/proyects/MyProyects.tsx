@@ -15,7 +15,9 @@ interface Props {
 export const MyProyects = ({ proyects }: Props) => {
   return (
     <>
-      <h2 className="text-3xl text-black font-bold">Mis Proyectos</h2>
+      <h2 className="text-3xl text-black font-bold dark:text-white">
+        Mis Proyectos
+      </h2>
       <Cards proyects={proyects} />
     </>
   );
