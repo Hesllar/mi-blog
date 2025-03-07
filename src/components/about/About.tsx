@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { image } from "../../../public/index";
+import { image, hiAnimation } from "../../../public/index";
 import { useState } from "react";
 import clsx from "clsx";
 import { MoreAbout } from "./MoreAbout";
@@ -26,7 +26,7 @@ export const About = () => {
             alt=""
             width={200}
             height={200}
-            className="rounded-full hover:skew-y-3"
+            className="rounded-lg hover:skew-y-3"
           />
         </div>
         <div
@@ -46,7 +46,15 @@ export const About = () => {
           onMouseLeave={handleOnMouseLeave}
         >
           <div className="flex flex-col gap-2">
-            <p className="text-3xl font-bold text-white">¡Hola!</p>
+            <div className="flex gap-2 items-center">
+              <p className="text-3xl font-bold text-white">¡Hola!</p>
+              <Image
+                src={hiAnimation}
+                alt="Hola animado"
+                width={50}
+                height={50}
+              />
+            </div>
             <span className="font-semibold text-lg text-white">
               Soy Hesllar Linzmayer, y bienvenidos a mi blog. Aquí podrás
               conocer mis proyectos, los cuales he desarrollado con dedicación y
@@ -65,7 +73,7 @@ export const About = () => {
                     }
                   )}
                 >
-                  Conocer más
+                  Más sobre mi
                 </span>
               </button>
             </div>
