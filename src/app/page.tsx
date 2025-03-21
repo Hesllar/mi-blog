@@ -1,31 +1,15 @@
 import { About } from "@/components/about/About";
-import { imageNotFound } from "../../public/index";
+import tecnogamerIMG from "../../public/img/tecnogamer.webp";
 import { MyProyects } from "@/components/proyects/MyProyects";
 
 const proyects = [
   {
-    name: "Proyecto_1",
-    description: "Lorem ipsum dolor sit amet.",
+    name: "Tecnogamer",
+    description:
+      "Proyecto que permite realizar ventas de producots de computadoras, tales como: tarjetas de video, procesadores, memorias ram, etc.",
     isActive: true,
-    image: imageNotFound,
-  },
-  {
-    name: "Proyecto_2",
-    description: "Lorem ipsum dolor sit amet.",
-    isActive: false,
-    image: imageNotFound,
-  },
-  {
-    name: "Proyecto_3",
-    description: "Lorem ipsum dolor sit amet.",
-    isActive: false,
-    image: imageNotFound,
-  },
-  {
-    name: "Proyecto_4",
-    description: "Lorem ipsum dolor sit amet.",
-    isActive: false,
-    image: imageNotFound,
+    image: tecnogamerIMG,
+    url: "https://tecnogamer-front-next.vercel.app/",
   },
 ];
 

@@ -1,20 +1,23 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 interface Props {
   name: string;
   description: string;
+  url: string;
   image: string | StaticImageData;
 }
 
-export const CardItem = ({ description, image, name }: Props) => {
+export const CardItem = ({ description, image, name, url }: Props) => {
   return (
     <div className="max-w-[720px] mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-100 duration-300">
       <div className="relative flex max-w-[24rem] flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md dark:bg-gradient-dark-dawn">
-        <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
+        <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border p-2">
           <Image
             src={image}
-            className="object-contain"
+            className="object-contain border-2 border-white rounded"
             alt="ui/ux review check"
           />
         </div>
@@ -26,16 +29,40 @@ export const CardItem = ({ description, image, name }: Props) => {
             {description}
           </p>
         </div>
-        {/* Agregar Boton */}
+        <div className="px-6">
+          <div className="border-dashed border-2 rounded-md border-white p-4">
+            <h4 className="text-white text-xl">Desarrollado en:</h4>
+            <div className="flex gap-8 mt-2 justify-center">
+              <RiNextjsFill
+                size={50}
+                title="Next"
+                className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 text-black dark:text-white"
+              />
+              <FaReact
+                size={50}
+                color="#61DAFB"
+                title="React"
+                className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+              />
+              <RiTailwindCssFill
+                size={50}
+                color="#38BDF8"
+                title="Tailwind"
+                className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+              />
+            </div>
+          </div>
+        </div>
         <div className="flex p-6 justify-center">
           <Link
-            href={`/proyect/${name}`}
+            href={url}
             className="
             w-full py-3 px-4 items-center text-center gap-x-2 text-lg  
             text-white font-medium rounded-lg border border-transparent bg-blue-700 
             dark:bg-white dark:text-black"
+            target="_blank"
           >
-            Ver Mas...
+            {`Ir a ${name}`}
           </Link>
         </div>
       </div>

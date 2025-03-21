@@ -32,7 +32,7 @@ export const Nav = () => {
         <div className="flex flex-wrap justify-between items-center w-full">
           <Link href="/" className="flex items-center">
             {/* <Image src='/Logo.png' height={500} width={500} className="mr-3 size-11 " alt="Icon" /> */}
-            <h1 className="block self-center text-xl font-serif font-normal whitespace-nowrap text-white">
+            <h1 className="block self-center text-2xl font-serif font-bold whitespace-nowrap text-white">
               Hesllar Linzmayer
             </h1>
           </Link>
