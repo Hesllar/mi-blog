@@ -6,6 +6,7 @@ interface Proyect {
   description: string;
   isActive: boolean;
   image: string | StaticImageData;
+  url?: string;
 }
 
 interface Props {

@@ -4,9 +4,9 @@ import { CardItem } from "./CardItem";
 interface Proyect {
   name: string;
   description: string;
-  url: string;
   isActive: boolean;
   image: string | StaticImageData;
+  url?: string;
 }
 
 interface Props {

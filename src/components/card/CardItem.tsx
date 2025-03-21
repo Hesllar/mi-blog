@@ -6,8 +6,8 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 interface Props {
   name: string;
   description: string;
-  url: string;
   image: string | StaticImageData;
+  url?: string;
 }
 
 export const CardItem = ({ description, image, name, url }: Props) => {
@@ -55,7 +55,7 @@ export const CardItem = ({ description, image, name, url }: Props) => {
         </div>
         <div className="flex p-6 justify-center">
           <Link
-            href={url}
+            href={url ?? "#"}
             className="
             w-full py-3 px-4 items-center text-center gap-x-2 text-lg  
             text-white font-medium rounded-lg border border-transparent bg-blue-700 
