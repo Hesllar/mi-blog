@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { image, hiAnimation } from "../../../public/index";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import clsx from "clsx";
 import { MoreAbout } from "./MoreAbout";
 
 export const About = () => {
+  const sectionMoreRef = useRef<HTMLDivElement>(null);
+
   const [showMore, setShowMore] = useState(false);
 
   const [isElementFocused, setIsElementFocused] = useState(false);
@@ -15,7 +17,20 @@ export const About = () => {
 
   const handleOnMouseLeave = () => setIsElementFocused(false);
 
-  const handleOnClick = () => setShowMore(!showMore);
+  const scrollToSectionMore = () => {
+    if (!sectionMoreRef.current) return;
+    sectionMoreRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+  const handleOnClick = () => {
+    if (!showMore) {
+      scrollToSectionMore();
+    }
+    setShowMore(!showMore);
+  };
 
   return (
     <>
@@ -80,6 +95,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+      <div ref={sectionMoreRef} className={!showMore ? "py-0" : "py-4"} />
       {showMore && <MoreAbout />}
     </>
   );
