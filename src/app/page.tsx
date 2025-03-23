@@ -15,7 +15,7 @@ const proyects = [
 
 export default function Home() {
   return (
-    <main className=" flex flex-col items-center my-32 justify-center mx-8 sm:mx-14 md:mx-24 gap-24">
+    <main className=" flex flex-col items-center my-32 justify-center mx-8 sm:mx-14 md:mx-24 gap-14">
       <About />
       <MyProyects proyects={proyects} />
     </main>

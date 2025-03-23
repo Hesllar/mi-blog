@@ -17,7 +17,7 @@ export const CardItem = ({ description, image, name, url }: Props) => {
         <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border p-2">
           <Image
             src={image}
-            className="object-contain border-2 border-white rounded"
+            className="object-contain border-4 border-black rounded dark:border-white dark:border-2"
             alt="ui/ux review check"
           />
         </div>
@@ -30,8 +30,10 @@ export const CardItem = ({ description, image, name, url }: Props) => {
           </p>
         </div>
         <div className="px-6">
-          <div className="border-dashed border-2 rounded-md border-white p-4">
-            <h4 className="text-white text-xl">Desarrollado en:</h4>
+          <div className="border-dashed border-2 rounded-md border-black p-4 dark:border-white">
+            <h4 className="text-black text-xl dark:text-white">
+              Desarrollado en:
+            </h4>
             <div className="flex gap-8 mt-2 justify-center">
               <RiNextjsFill
                 size={50}
