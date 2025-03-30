@@ -79,21 +79,16 @@ export const About = () => {
               <button
                 onClick={handleOnClick}
                 className={clsx(
-                  " bg-white w-full sm:w-1/2 xl:w-1/6 p-3 rounded-lg hover:shadow-2xl",
+                  "w-full sm:w-1/2 xl:w-1/6 p-3 rounded-lg hover:shadow-2xl",
                   {
-                    "dark:bg-gradient-ocean": isElementFocused,
-                    "dark:bg-gradient-electric": !isElementFocused,
+                    "bg-gradient-to-r from-purple-500 to-pink-500 dark:bg-gradient-ocean":
+                      isElementFocused,
+                    " bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-electric":
+                      !isElementFocused,
                   }
                 )}
               >
-                <span
-                  className={clsx(
-                    "font-semibold text-lg text-purple-400 dark:text-white",
-                    {
-                      "dark:text-white": isElementFocused,
-                    }
-                  )}
-                >
+                <span className="font-semibold text-lg text-white">
                   Más sobre mi
                 </span>
               </button>
