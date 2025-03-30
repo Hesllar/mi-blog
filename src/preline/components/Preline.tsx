@@ -12,7 +12,6 @@ declare global {
 }
 
 export const PrelineScript = () => {
-
   const path = usePathname();
 
   useEffect(() => {
@@ -26,5 +25,4 @@ export const PrelineScript = () => {
   }, [path]);
 
   return null;
-}
-
+};
