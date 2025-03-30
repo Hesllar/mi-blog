@@ -61,6 +61,7 @@ export const CardItem = ({ description, image, name, url }: Props) => {
             className="
             w-full py-3 px-4 items-center text-center gap-x-2 text-lg  
             text-white font-medium rounded-lg border border-transparent bg-blue-700 
+            transition ease-in-out hover:-translate-y-1 hover:scale-x-90 duration-300
             dark:bg-white dark:text-black"
             target="_blank"
           >

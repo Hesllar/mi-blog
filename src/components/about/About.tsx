@@ -78,13 +78,19 @@ export const About = () => {
             <div className="flex justify-center mt-6">
               <button
                 onClick={handleOnClick}
-                className="bg-white w-full sm:w-1/2 xl:w-1/6 p-3 rounded-lg hover:shadow-2xl dark:bg-[#FFFFFF]"
+                className={clsx(
+                  " bg-white w-full sm:w-1/2 xl:w-1/6 p-3 rounded-lg hover:shadow-2xl",
+                  {
+                    "dark:bg-gradient-ocean": isElementFocused,
+                    "dark:bg-gradient-electric": !isElementFocused,
+                  }
+                )}
               >
                 <span
                   className={clsx(
-                    "font-semibold text-lg text-purple-400 dark:text-[#203A43]",
+                    "font-semibold text-lg text-purple-400 dark:text-white",
                     {
-                      "text-cyan-300": isElementFocused,
+                      "dark:text-white": isElementFocused,
                     }
                   )}
                 >
