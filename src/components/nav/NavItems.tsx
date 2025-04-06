@@ -12,7 +12,7 @@ type flexDirection = "flex-row" | "flex-col";
 
 const navItems = [
   {
-    name: "Incio",
+    name: "Inicio",
     path: "/",
   },
 ];
